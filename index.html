@@ -9,20 +9,27 @@
     <title>Track Suggester</title>
   </head>
   <body>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6">
+          <h1>Programming Track Suggester</h1>
+          <h2>Which path should you take?</h2><br>
+        </div>
+      </div>
+    </div>
     <div class="container">
-      <h1>Programming Track Suggester</h1>
-      <h2>Which path should you take?</h2><br>
 
-      <p>Which seems <strong>most</strong> appealing?</p>
-      <select class="form-control" id="devSide">
-        <option>Not Sure</option>
-        <option value="cs">Front End</option>
-        <option value="ph">Back End</option>
-        <option value="rb">A mix of both</option>
-      </select><br>
-
-      <p>Which of the following statements <strong>comes closest</strong> to your view?</p>
       <form id="survey">
+        <p>Which seems <strong>most</strong> appealing?</p>
+        <select class="form-control" id="devSide">
+          <option>Not Sure</option>
+          <option value="cs">Front End</option>
+          <option value="ph">Back End</option>
+          <option value="rb">A mix of both</option>
+        </select><br>
+
+        <p>Which of the following statements <strong>comes closest</strong> to your view?</p>
         <div class="radio">
           <label><input type="radio" name="optradio1" value="rb"> I want to work for a startup.</label>
         </div>
@@ -88,9 +95,14 @@
           <label><input type="radio" name="optradio6" value="cs"> That might take some time.</label>
         </div><br>
 
-        <button type="submit" class="btn">Submit</button>
+        <button type="submit" class="btn btn-success">Submit</button>
       </form><br>
-      <div id="result"></div>
+      <div id="ruby">
+        <img src="img/ruby.png" alt="ruby/rails logo">
+        <h2>Ruby/Rails</h2>
+        <p>Ruby on Rails, or simply Rails, is a server-side web application framework written in Ruby under the MIT License. Rails is a model–view–controller (MVC) framework, providing default structures for a database, a web service, and web pages. It encourages and facilitates the use of web standards such as JSON or XML for data transfer, and HTML, CSS and JavaScript for display and user interfacing. In addition to MVC, Rails emphasizes the use of other well-known software engineering patterns and paradigms, including convention over configuration (CoC), don't repeat yourself (DRY), and the active record pattern.[</p>
+        <button id="tryAgainRuby" type="button" class="btn btn-success">Try Again</button>
+      </div>
     </div>
   </body>
 </html>

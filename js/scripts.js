@@ -61,8 +61,19 @@ $(document).ready(function() {
       css += 1;
     }
 
-    $('#result').text('You scored ' + ruby + ' for ruby and ' + php + ' for php and ' + css + ' as css.');
-    alert(ruby +''+ php +''+ css);
+    // $('#result').text('You scored ' + ruby + ' for ruby and ' + php + ' for php and ' + css + ' as css.');
+    // alert(ruby +''+ php +''+ css);
 
+    $('#survey').fadeOut(700);
+    $('#ruby').slideToggle();
+
+
+
+  });
+
+  $('#tryAgainRuby').click(function(event) {
+    event.preventDefault();
+    $('#ruby').slideToggle();
+    $('#survey').slideToggle();
   });
 });

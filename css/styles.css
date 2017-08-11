@@ -1,7 +1,27 @@
 body {
-  //background-color: #686ca5;
+  font-family: monospace;
+  font-weight: 400;
+  color: #191F2D !important;
+  background-color: #a59e6f;
+  font-size: 1.2vw;
+}
+
+.jumbotron {
+  font-family: monospace;
+  background-image: url(img/code.jpg);
+  color: #a59e6f;
+  background-size: 100%;
 }
 
 #devSide {
   width: 200px;
+}
+
+#ruby {
+  display: none;
+}
+
+#ruby img {
+  float: right;
+  margin-left: 60px;
 }
