@@ -5,7 +5,7 @@ var css = 0;
 $(document).ready(function() {
   $("form#survey").submit(function(event) {
     event.preventDefault();
-
+    // vars used for all values
     var side = $("#devSide").val();
     var one = $("input:radio[name=optradio1]:checked").val();
     var two = $("input:radio[name=optradio2]:checked").val();
@@ -13,16 +13,16 @@ $(document).ready(function() {
     var four = $("input:radio[name=optradio4]:checked").val();
     var five = $("input:radio[name=optradio5]:checked").val();
     var six = $("input:radio[name=optradio6]:checked").val();
-
+    // if statements to asign value to track
     if (one==undefined || two==undefined || three==undefined) {
       alert("Please select a response for each question");
       return;
     } if (side == 'rb') {
-      ruby += 1;
+      ruby += 2;
     } else if (side == 'ph') {
-      php += 1;
+      php += 2;
     } else if (side == 'cs') {
-      css += 1;
+      css += 2;
     } if (one == 'rb') {
       ruby += 1;
     } else if (one == 'ph') {
@@ -60,7 +60,7 @@ $(document).ready(function() {
     } else if (six == 'cs') {
       css += 1;
     }
-
+    // if statements to show track with highest score
     if (ruby > php && ruby > css) {
       $('#survey').fadeOut(600);
       $('#ruby').slideToggle();
@@ -71,7 +71,14 @@ $(document).ready(function() {
       $('#survey').fadeOut(600);
       $('#css').slideToggle();
     }
-
+    // if statements in case of tie
+    if (ruby == php && css < ruby) {
+      alert('Your scores were equal in Ruby and PHP. Please try again.');
+    } else if (ruby == css && php < ruby) {
+      alert('Your scores were equal in Ruby and CSS. Please try again.');
+    } else if (php == css && ruby < php) {
+      alert('Your scores were equal in PHP and CSS. Please try again.');
+    }
   }); //.submit form
 
   $('#tryAgainRuby').click(function(event) {
