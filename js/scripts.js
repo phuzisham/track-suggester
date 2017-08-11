@@ -6,13 +6,23 @@ $(document).ready(function() {
   $("form#survey").submit(function(event) {
     event.preventDefault();
 
+    var side = $("#devSide").val();
     var one = $("input:radio[name=optradio1]:checked").val();
     var two = $("input:radio[name=optradio2]:checked").val();
     var three = $("input:radio[name=optradio3]:checked").val();
-    var four = $("#party").val();
+    var four = $("input:radio[name=optradio4]:checked").val();
+    var five = $("input:radio[name=optradio5]:checked").val();
+    var six = $("input:radio[name=optradio6]:checked").val();
+
 
     if (one==undefined || two==undefined || three==undefined) {
       alert("Please select a response for each question");
+    } if (side == 'rb') {
+      ruby += 1;
+    } else if (side == 'ph') {
+      php += 1;
+    } else if (side == 'cs') {
+      css += 1;
     } if (one == 'rb') {
       ruby += 1;
     } else if (one == 'ph') {
@@ -36,6 +46,18 @@ $(document).ready(function() {
     } else if (four == 'ph') {
       php += 1;
     } else if (four == 'cs') {
+      css += 1;
+    } if (five == 'rb') {
+      ruby += 1;
+    } else if (five == 'ph') {
+      php += 1;
+    } else if (five == 'cs') {
+      css += 1;
+    } if (six == 'rb') {
+      ruby += 1;
+    } else if (six == 'ph') {
+      php += 1;
+    } else if (six == 'cs') {
       css += 1;
     }
 
