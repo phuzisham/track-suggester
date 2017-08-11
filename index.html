@@ -1,10 +1,63 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <meta charset="utf-8">
     <title>Track Suggester</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Programming Track Suggester</h1>
+      <h2>Which path should you take?</h2><br>
 
+      <p>Which seems <strong>most</strong> appealing?</p>
+      <select class="form-control" id="devSide">
+        <option>Unsure</option>
+        <option value="rb">Front End</option>
+        <option value="ph">Back End</option>
+        <option value="cs">A mix of both</option>
+      </select><br>
+
+      <p>Which of the following statements <strong>comes closest</strong> to your view?</p>
+      <form id="survey">
+        <div class="radio">
+          <label><input type="radio" name="optradio1" value="rb">Option 1</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio1" value="ph">Option 2</label>
+        </div>
+        <div class="radio disabled">
+          <label><input type="radio" name="optradio1" value="cs">Option 3</label>
+        </div><br>
+
+        <p>Which of the following statements <strong>comes closest</strong> to your view?</p>
+        <div class="radio">
+          <label><input type="radio" name="optradio2" value="rb">Option 1</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio2" value="ph">Option 2</label>
+        </div>
+        <div class="radio disabled">
+          <label><input type="radio" name="optradio2" value="cs">Option 3</label>
+        </div><br>
+
+        <p>Which of the following statements <strong>comes closest</strong> to your view?</p>
+        <div class="radio">
+          <label><input type="radio" name="optradio3" value="rb">Option 1</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio3" value="ph">Option 2</label>
+        </div>
+        <div class="radio disabled">
+          <label><input type="radio" name="optradio3" value="cs">Option 3</label>
+        </div><br>
+
+        <button type="submit" class="btn">Submit</button>
+      </form><br>
+      <div id="result"></div>
+    </div>
   </body>
 </html>
