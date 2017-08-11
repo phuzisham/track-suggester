@@ -14,9 +14,9 @@ $(document).ready(function() {
     var five = $("input:radio[name=optradio5]:checked").val();
     var six = $("input:radio[name=optradio6]:checked").val();
 
-
     if (one==undefined || two==undefined || three==undefined) {
       alert("Please select a response for each question");
+      return;
     } if (side == 'rb') {
       ruby += 1;
     } else if (side == 'ph') {
@@ -61,19 +61,43 @@ $(document).ready(function() {
       css += 1;
     }
 
-    // $('#result').text('You scored ' + ruby + ' for ruby and ' + php + ' for php and ' + css + ' as css.');
-    // alert(ruby +''+ php +''+ css);
+    if (ruby > php && ruby > css) {
+      $('#survey').fadeOut(600);
+      $('#ruby').slideToggle();
+    } else if (php > ruby && php > css) {
+      $('#survey').fadeOut(600);
+      $('#php').slideToggle();
+    } else if (css > php && css > ruby) {
+      $('#survey').fadeOut(600);
+      $('#css').slideToggle();
+    }
 
-    $('#survey').fadeOut(700);
-    $('#ruby').slideToggle();
-
-
-
-  });
+  }); //.submit form
 
   $('#tryAgainRuby').click(function(event) {
     event.preventDefault();
     $('#ruby').slideToggle();
     $('#survey').slideToggle();
+    ruby = 0;
+    php = 0;
+    css = 0;
   });
-});
+
+  $('#tryAgainPHP').click(function(event) {
+    event.preventDefault();
+    $('#php').slideToggle();
+    $('#survey').slideToggle();
+    ruby = 0;
+    php = 0;
+    css = 0;
+  });
+
+  $('#tryAgainCSS').click(function(event) {
+    event.preventDefault();
+    $('#css').slideToggle();
+    $('#survey').slideToggle();
+    ruby = 0;
+    php = 0;
+    css = 0;
+  });
+}); // document.ready

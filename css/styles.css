@@ -21,7 +21,26 @@ body {
   display: none;
 }
 
+#php {
+  display: none;
+}
+
+#css {
+  display: none;
+}
+
 #ruby img {
   float: right;
   margin-left: 60px;
+}
+
+#php img {
+  float: right;
+  margin-left: 35px;
+  margin-right: 20px;
+}
+
+#css img {
+  max-width: 50%;
+  float: right;
 }
