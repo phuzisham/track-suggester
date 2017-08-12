@@ -4,11 +4,13 @@
 
 #### _{https://github.com/phuzisham/track-suggester}_
 
+#### _{https://phuzisham.github.io/track-suggester/}_
+
 #### By _**{David Hale}**_
 
 ## Description
 
-_{Site that offers a quiz to see which programming language you are best suite for.}_
+_{Site that offers a quiz to see which programming language you are best suited for.}_
 
 ## Known Bugs
 

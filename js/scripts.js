@@ -13,7 +13,17 @@ $(document).ready(function() {
     var four = $("input:radio[name=optradio4]:checked").val();
     var five = $("input:radio[name=optradio5]:checked").val();
     var six = $("input:radio[name=optradio6]:checked").val();
-    // if statements to asign value to track
+
+    function assignVal(question) {
+      if (question == 'rb') {
+        ruby += 1;
+      } else if (question == 'ph') {
+        php += 1;
+      } else if (question == 'cs') {
+        css += 1;
+      }
+    }
+
     if (one==undefined || two==undefined || three==undefined) {
       alert("Please select a response for each question");
       return;
@@ -23,43 +33,14 @@ $(document).ready(function() {
       php += 2;
     } else if (side == 'cs') {
       css += 2;
-    } if (one == 'rb') {
-      ruby += 1;
-    } else if (one == 'ph') {
-      php += 1;
-    } else if (one == 'cs') {
-      css += 1;
-    } if (two == 'rb') {
-      ruby += 1;
-    } else if (two == 'ph') {
-      php += 1;
-    } else if (two == 'cs') {
-      css += 1;
-    } if (three == 'rb') {
-      ruby += 1;
-    } else if (three == 'ph') {
-      php += 1;
-    } else if (three == 'cs') {
-      css += 1;
-    } if (four == 'rb') {
-      ruby += 1;
-    } else if (four == 'ph') {
-      php += 1;
-    } else if (four == 'cs') {
-      css += 1;
-    } if (five == 'rb') {
-      ruby += 1;
-    } else if (five == 'ph') {
-      php += 1;
-    } else if (five == 'cs') {
-      css += 1;
-    } if (six == 'rb') {
-      ruby += 1;
-    } else if (six == 'ph') {
-      php += 1;
-    } else if (six == 'cs') {
-      css += 1;
     }
+    assignVal(one);
+    assignVal(two);
+    assignVal(three);
+    assignVal(four);
+    assignVal(five);
+    assignVal(six);
+
     // if statements to show track with highest score
     if (ruby > php && ruby > css) {
       $('#survey').fadeOut(600);
