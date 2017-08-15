@@ -19,14 +19,17 @@ body {
 
 #ruby {
   display: none;
+  margin-bottom: 50px;
 }
 
 #php {
   display: none;
+  margin-bottom: 50px;
 }
 
 #css {
   display: none;
+  margin-bottom: 50px;
 }
 
 #ruby img {
