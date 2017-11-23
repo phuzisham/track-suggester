@@ -38,4 +38,4 @@ _HTML5, CSS, BootStrap, JavaScript, jQuery_
 
 ### License
 
-MIT (c) 2017 **_{David Hale}_**
+MIT (c) 2017 **_David Hale_**
