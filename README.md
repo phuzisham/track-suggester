@@ -1,28 +1,37 @@
-# _{Track Suggester}_
+# Track Suggester
 
-#### _{Current Version Updated}, {08/011/17}_
-
-#### _{https://github.com/phuzisham/track-suggester}_
-
-#### _{https://phuzisham.github.io/track-suggester/}_
+#### _Created: 08.11.2017_
+#### _Last Modified: 11.21.2017_
 
 #### By _**{David Hale}**_
 
+#### _Site hosted [here](https://phuzisham.github.io/track-suggester/)._
+
 ## Description
 
-_{Site that offers a quiz to see which programming language you are best suited for.}_
+_Site that offers a quiz to see which programming language you are best suited for._
+
+## User Stories
+
+* _Users can select multiple choice answers to get their results._
+
+## Setup/Installation Requirements
+
+1. _Download files [here](https://github.com/phuzisham/track-suggester.git)._
+
+2. _Inside root directory open index.html_
 
 ## Known Bugs
 
-_{Currently has responsive design issues that need to be addressed.}_
+_Currently has responsive design issues that need to be addressed._
 
 ## Support and contact details
 
-_{Contact me at david.hale7@gmail.com}_
+_Contact me at david.hale7@gmail.com_
 
 ## Technologies Used
 
-_{HTML5, CSS, BootStrap, JavaScript, jQuery}_
+_HTML5, CSS, BootStrap, JavaScript, jQuery_
 
 ### License
 
