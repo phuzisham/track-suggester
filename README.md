@@ -3,13 +3,16 @@
 #### _Created: 08.11.2017_
 #### _Last Modified: 11.21.2017_
 
-#### By _**{David Hale}**_
+#### By _**David Hale**_
 
 #### _Site hosted [here](https://phuzisham.github.io/track-suggester/)._
 
 ## Description
 
 _Site that offers a quiz to see which programming language you are best suited for._
+
+![Screenshot](https://github.com/phuzisham/track-suggester/blob/master/img/cap.png "Screen Capture")
+![Screenshot](https://github.com/phuzisham/track-suggester/blob/master/img/cap2.png "Screen Capture")
 
 ## User Stories
 
